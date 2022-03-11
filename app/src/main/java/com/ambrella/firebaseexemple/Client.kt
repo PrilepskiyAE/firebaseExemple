@@ -1,4 +1,6 @@
 package com.ambrella.firebaseexemple
 
+import com.google.firebase.database.IgnoreExtraProperties
 
-data class Client(var Key:String,var message:String,var name:String)
+@IgnoreExtraProperties
+data class Client(var Key:String?=null,var message:String?=null,var name:String?=null)
